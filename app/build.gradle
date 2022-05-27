@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\imaad\\DiceRoller\\settings.gradle')
+            storePassword 'Dice'
+            keyAlias 'Key'
+            keyPassword 'KeyPassword'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
